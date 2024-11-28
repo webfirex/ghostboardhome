@@ -1,5 +1,5 @@
 'use client'
-import LoadAnimation from "@/components/animations/cricketanimation";
+import LoadAnimation from "@/components/animations/loadAnimation";
 import HeroSection from "@/components/home-page/hero";
 import Image from "next/image";
 import { useState, useEffect } from "react";
