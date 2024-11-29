@@ -73,8 +73,8 @@ body {
 }
 
 body {
-  background-color: #070707;
-  background: #070707;
+  background-color: #000;
+  background: #000;
 }
 
 @layer base {
@@ -84,4 +84,15 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hide scrollbar for WebKit-based browsers */
+html {
+  overflow: -moz-scrollbars-none; /* Fallback for older Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
 }

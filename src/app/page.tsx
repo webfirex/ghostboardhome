@@ -2,6 +2,7 @@
 import LoadAnimation from "@/components/animations/loadAnimation";
 import HeroSection from "@/components/home-page/hero";
 import StocksMarquee from "@/components/home-page/stocksSlide";
+import WhyUs from "@/components/home-page/whyUs";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -56,6 +57,7 @@ export default function Home() {
       <div className="flex min-h-screen h-full flex-col items-center w-full overflow-x-hidden">
         <HeroSection />
         <StocksMarquee />
+        <WhyUs />
       </div>
 
     </>

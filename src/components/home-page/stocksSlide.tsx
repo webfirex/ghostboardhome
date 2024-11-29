@@ -3,73 +3,73 @@ import Marquee from "../ui/marquee";
 
 const exchanges = [
     {
-        ticker: 'SPY / USD',
+        ticker: 'SPY',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'CALL'
     },
     {
-        ticker: 'QQQ / USD',
+        ticker: 'QQQ',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'PUT'
     },
     {
-        ticker: 'SPX / USD',
+        ticker: 'SPX',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'CALL'
     },
     {
-        ticker: 'AAPL / USD',
+        ticker: 'AAPL',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'PUT'
     },
     {
-        ticker: 'ABDE / USD',
+        ticker: 'ABDE',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'CALL'
     },
     {
-        ticker: 'IBM / USD',
+        ticker: 'IBM',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'CALL'
     },
     {
-        ticker: 'NSY / USD',
+        ticker: 'NSY',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'PUT'
     },
     {
-        ticker: 'TQQQ / USD',
+        ticker: 'TQQQ',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'CALL'
     },
     {
-        ticker: 'AMD / USD',
+        ticker: 'AMD',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'PUT'
     },
     {
-        ticker: 'COIN / USD',
+        ticker: 'COIN',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'PUT'
     },
     {
-        ticker: 'MSTR / USD',
+        ticker: 'MSTR',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'CALL'
     },
     {
-        ticker: 'AMZN / USD',
+        ticker: 'AMZN',
         rate: '43500.04',
         changeRate: '+2.53%',
         state: 'PUT'
@@ -90,16 +90,18 @@ const ExchangeCard = ({
   return (
     <figure
       className={cn(
-        "relative cursor-pointer overflow-hidden rounded-xl p-2"
+        "relative cursor-pointer overflow-hidden rounded-xl p-2 mx-7"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
-        <p className="text-3xl font-medium text-white uppercase">{ticker}</p>
+      <div className="flex flex-row items-center gap-4">
+        <p className="text-4xl font-medium text-white uppercase">{ticker}</p>
         <div className="flex flex-col">
-          <p className={cn("text-xs", state === 'CALL' ? ' text-green-500 ' : ' text-red-500 ')}>{changeRate}</p>
-          <p className={cn("text-xs", ' text-zinc-400 font-light')}>{rate}</p>
+          <p className={cn("text-lg", ' text-zinc-400 font-light')}>{rate}</p>
+          <div className="flex items-center gap-1">
+            <p className={cn("text-xs", state === 'CALL' ? ' text-green-500 ' : ' text-red-500 ')}>{changeRate}</p>
+            <p className={cn("text-xs", state === 'CALL' ? ' text-green-500 ' : ' text-red-500 ')}>{state === 'CALL' ? '▲' : '▼'}</p>
+          </div>
         </div>
-        <p className={cn("text-xs", state === 'CALL' ? ' text-green-500 ' : ' text-red-500 ')}>{state === 'CALL' ? '▲' : '▼'}</p>
       </div>
     </figure>
   );
@@ -107,7 +109,7 @@ const ExchangeCard = ({
 
 export default function StocksMarquee() {
   return (
-    <div className="relative flex w-full bg-dark justify-between items-center flex-col overflow-hidden mb-12">
+    <div className="relative flex w-full justify-between items-center flex-col overflow-hidden mb-12">
       <Marquee pauseOnHover className="[--duration:50s]">
         {exchanges.map((exchange) => (
           <ExchangeCard key={exchange.ticker} {...exchange} />

@@ -76,7 +76,8 @@ export default {
   			rainbow: 'rainbow var(--speed, 2s) infinite linear',
   			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
   			'shiny-text': 'shiny-text 8s infinite',
-  			shine: 'shine var(--duration) infinite linear'
+  			shine: 'shine var(--duration) infinite linear',
+			glowBg: 'glowBg 5s infinite linear',
   		},
   		keyframes: {
   			'shimmer-slide': {
@@ -157,6 +158,23 @@ export default {
   				},
   				to: {
   					'background-position': '0% 0%'
+  				}
+  			},
+  			glowBg: {
+  				'0%': {
+  					'opacity': '1'
+  				},
+  				'25%': {
+  					'opacity': '0.7'
+  				},
+  				'40%': {
+  					'opacity': '0.9'
+  				},
+  				'70%': {
+  					'opacity': '0.5'
+  				},
+  				to: {
+  					'opacity': '1'
   				}
   			}
   		}
