@@ -1,6 +1,7 @@
 'use client'
 import LoadAnimation from "@/components/animations/loadAnimation";
 import HeroSection from "@/components/home-page/hero";
+import StocksMarquee from "@/components/home-page/stocksSlide";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -27,33 +28,34 @@ export default function Home() {
     isExiting ? () => {return () => clearTimeout(timer2)} : '';
   }, [isExiting]);
 
-  if (isLoading) {
-    return (
-      <div
-        className={`fixed top-0 left-0 w-screen flex items-center justify-center h-screen bg-black text-white z-[100]`}
-      >
-        <div className="text-center">
-          {/* <p className="text-xl font-semibold animate-pulse">Loading...</p> */}
-          <LoadAnimation />
-        </div>
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div
+  //       className={`fixed top-0 left-0 w-screen flex items-center justify-center h-screen bg-black text-white z-[100]`}
+  //     >
+  //       <div className="text-center">
+  //         {/* <p className="text-xl font-semibold animate-pulse">Loading...</p> */}
+  //         <LoadAnimation />
+  //       </div>
+  //     </div>
+  //   );
+  // }
   
   return (
     <>
 
-      <div
+      {/* <div
         className={`fixed top-0 left-0 w-screen h-screen bg-black transition-all duration-1000 scale-y-50 origin-top z-[100] ${
           isExiting2 ? '-translate-y-full scale-y-50 opacity-0' : 'translate-y-0 scale-y-100 opacity-100'
         }`}
       >
         <div className="text-center">
         </div>
-      </div>
+      </div> */}
 
       <div className="flex min-h-screen h-full flex-col items-center w-full overflow-x-hidden">
         <HeroSection />
+        <StocksMarquee />
       </div>
 
     </>
