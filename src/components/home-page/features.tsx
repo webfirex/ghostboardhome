@@ -20,31 +20,31 @@ import BoxReveal from "../ui/box-reveal";
 export function FeaturesSection() {
   const features = [
     {
-      title: "Track issues effectively 1",
+      title: "Uncover Market Moves in Real-Time",
       description:
-        "Track and manage your project issues with ease using our intuitive interface.",
+        "Track large-scale trades to identify trends and stay ahead of institutional activity.",
       skeleton: <SkeletonOne img='/modules/flow.png' />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
     },
     {
-      title: "Capture pictures with AI 1",
+      title: "Reveal Hidden Institutional Trades",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "Access insider-like data from dark pools to track undisclosed market movements",
       skeleton: <SkeletonTwo img='/modules/darkpool.png' />,
       className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
     },
     {
-      title: "Capture pictures with AI",
+      title: "Decode Market Volatility Dynamics",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "Analyze gamma exposure to anticipate market shifts and gain a tactical edge",
       skeleton: <SkeletonTwo img='/modules/netgamma.png' />,
       className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
     },
     {
-      title: "Track issues effectively",
+      title: "AI Insights for Smarter Trades",
       description:
-        "Track and manage your project issues with ease using our intuitive interface.",
+        "Leverage AI-powered analysis to predict market behavior and optimize your trading strategies",
       skeleton: <SkeletonOne img='/modules/flowai.png' />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-l border-neutral-800",
