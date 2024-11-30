@@ -5,16 +5,17 @@ import { IconArrowNarrowRight, IconArrowRight } from "@tabler/icons-react";
 import { RainbowButton } from "../ui/rainbow-button";
 import { manrope } from "@/utils/font";
 import Link from "next/link";
-import { ContainerScroll } from "../ui/container-scroll-animation";
-import { Image } from "@mantine/core";
 import GradualSpacing from "../ui/gradual-spacing";
-import GlowBg from "../effects/glow";
+import { CardContainer, CardItem } from "../ui/3d-card";
+import NumberTicker from "../ui/number-ticker";
+import { WhyUsCards } from "@/data/whyus";
 
 export default function WhyUs() {
     // bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-right
     return (
-        <div className="flex flex-col items-center w-full relative my-7">
-            <div className="flex w-full max-w-[1500px] py-7 px-3 justify-center items-center flex-wrap">
+        <div className="flex flex-col items-center w-full my-7">
+            
+            <div className="flex w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
                 
                 <div className="flex flex-col w-1/2 min-[780px]:w-1/2 px-3 justify-center z-10 gap-4">
 
@@ -35,7 +36,7 @@ export default function WhyUs() {
                     <div className="flex gap-4 w-full justify-start mt-4">
                         <Link href={'/account'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-white py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
                             Check our plans
-                            <IconArrowNarrowRight />
+                            <IconArrowNarrowRight className=" -rotate-12 origin-bottom" />
                         </Link>
                     </div>
                 </div>
@@ -45,12 +46,12 @@ export default function WhyUs() {
                         <div className="flex gap-1 w-full justify-end">
                             <GradualSpacing
                               direction="left"
-                              className=" select-none pointer-events-none text-white text-4xl"
+                              className=" select-none pointer-events-none text-white text-4xl"   
                               text="Why Traders"
                             /> &nbsp;
                             <GradualSpacing
                               direction="left"
-                              className={manrope.className + " select-none pointer-events-none text-primary text-4xl !italic font-extralight underline underline-offset-4"}
+                              className={manrope.className + " select-none pointer-events-none text-primaryLight text-4xl !italic font-extralight underline underline-offset-4"}
                               text="Trust Us"
                             />
                         </div>
@@ -62,6 +63,26 @@ export default function WhyUs() {
                     </div>
                     <video src="/ghostvid.mp4" autoPlay muted loop className="w-full h-auto aspect-video max-w-[700px] rounded-md"></video>
                 </div>
+                
+            </div>
+
+            <div className="flex w-full max-w-[1500px] px-3 justify-center items-center flex-wrap">
+                
+                {WhyUsCards.map((item, index) => (
+                    <div className="flex flex-col w-1/4 px-2 justify-center gap-4" key={index}>
+                        <CardContainer className="inter-var border border-primary/35 p-10 w-full rounded-3xl cursor-default">
+                            <CardItem
+                              translateZ="60"
+                              className="text-sm max-w-sm my-5 w-full"
+                            >
+                                <p className={manrope.className + " text-5xl !font-thin tracking-tighter text-primaryLight w-full mb-4"}>
+                                  <NumberTicker value={item.number} className={" text-primaryLight font-medium text-6xl"} />{item.symbol}
+                                </p>
+                                <p className="text-sm text-zinc-400 w-full">{item.text}</p>
+                            </CardItem>
+                        </CardContainer>
+                    </div>
+                ))}
                 
             </div>
         </div>

@@ -33,7 +33,7 @@ export default function GradualSpacing({
             initial="hidden"
             animate="visible"
             variants={framerProps ?? {
-              hidden: { opacity: 0, x: direction === 'left' ? 20 : -20 },
+              hidden: { opacity: 0, x: direction === 'left' ? 1 : -1 },
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ duration, delay: i * delayMultiple }}
