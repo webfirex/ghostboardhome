@@ -50,9 +50,9 @@ export function FeaturesSection() {
     },
   ];
   return (
-    <div className="relative z-20 py-10 w-full bg-black/30 backdrop-blur-lg">
+    <div className="relative z-20 py-10 w-full">
 
-      <div className="relative w-full">
+      <div className="relative w-full bg-black/30 backdrop-blur-lg">
         <div className="grid grid-cols-1 lg:grid-cols-6 xl:border rounded-3xl overflow-hidden border-neutral-800 w-full">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
@@ -180,7 +180,17 @@ export default function Features() {
                             <GradualSpacing
                               direction="left"
                               className=" select-none pointer-events-none text-white text-4xl"   
-                              text="AI-Driven Features Built to"
+                              text="AI-Driven"
+                            /> &nbsp;
+                            <GradualSpacing
+                              direction="left"
+                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-4xl italic"   
+                              text="Features"
+                            /> &nbsp;
+                            <GradualSpacing
+                              direction="left"
+                              className=" select-none pointer-events-none text-white text-4xl"   
+                              text="Built to"
                             />
                         </div>
                         <GradualSpacing

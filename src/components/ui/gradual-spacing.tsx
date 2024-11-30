@@ -22,7 +22,7 @@ export default function GradualSpacing({
   direction,
 }: GradualSpacingProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Trigger animation only once when visible
+  const isInView = useInView(ref, { once: true });
 
   return (
     <div ref={ref} className="flex justify-center">
