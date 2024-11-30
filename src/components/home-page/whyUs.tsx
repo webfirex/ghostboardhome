@@ -8,11 +8,10 @@ import Link from "next/link";
 import GradualSpacing from "../ui/gradual-spacing";
 import { CardContainer, CardItem } from "../ui/3d-card";
 import NumberTicker from "../ui/number-ticker";
-import { WhyUsCards } from "@/data/whyus";
+import { WhyUsCards } from "@/data/modules";
 import BoxReveal from "../ui/box-reveal";
 
 export default function WhyUs() {
-    // bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-right
     return (
         <div className="flex flex-col items-center w-full my-7">
             

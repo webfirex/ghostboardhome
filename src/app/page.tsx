@@ -1,5 +1,6 @@
 'use client'
 import LoadAnimation from "@/components/animations/loadAnimation";
+import CommunityTrades from "@/components/home-page/communityTrades";
 import Features from "@/components/home-page/features";
 import HeroSection from "@/components/home-page/hero";
 import StocksMarquee from "@/components/home-page/stocksSlide";
@@ -60,6 +61,7 @@ export default function Home() {
         <WhyUs />
         <StocksMarquee />
         <Features />
+        <CommunityTrades />
       </div>
 
     </>
