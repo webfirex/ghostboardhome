@@ -171,7 +171,7 @@ export const SkeletonThree = () => {
 
 export default function Features() {
     return (
-        <div className="flex flex-col items-center w-full relative my-7 bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-right">
+        <div className="flex flex-col items-center w-full relative my-7 bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-top">
             <div className="flex w-full max-w-[1500px] py-7 px-3 justify-center items-center flex-wrap">
                 
                 <div className="flex flex-col w-full px-3 justify-center items-center z-10 gap-7">
@@ -203,7 +203,7 @@ export default function Features() {
                 </div>
                 
             </div>
-            <GlowBg />
+            {/* <GlowBg /> */}
         </div>
     )
 }
