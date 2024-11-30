@@ -10,7 +10,7 @@ import { Image } from "@mantine/core";
 
 export default function HeroSection() {
     return (
-        <div className="flex flex-col items-center w-full relative bg-[url(/hero-bg.png)] bg-no-repeat bg-contain bg-top min-h-[90vh] pt-[100px]">
+        <div className="flex flex-col items-center w-full relative bg-[url(/com2-bg.png)] bg-no-repeat bg-contain bg-top min-h-[90vh] pt-[100px]">
             <div className="flex flex-col w-full max-w-[1500px] py-7 px-3 justify-center items-center z-10 gap-4">
 
                 <ContainerScroll
@@ -52,7 +52,7 @@ export default function HeroSection() {
                 </ContainerScroll>
                 
             </div>
-            <FlickerBg />
+            {/* <FlickerBg /> */}
         </div>
     )
 }

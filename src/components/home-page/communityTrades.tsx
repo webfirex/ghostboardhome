@@ -7,7 +7,7 @@ import GradualSpacing from "../ui/gradual-spacing";
 
 export default function CommunityTrades() {
     return (
-        <div className="flex flex-col items-center w-full my-7 md:bg-[url(/com-bg.png)] bg-no-repeat bg-cover bg-right">
+        <div className="flex flex-col items-center w-full my-7 md:bg-[url(/com-bg.png)] bg-no-repeat bg-cover bg-bottom">
             
             <div className="flex w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
                 
@@ -41,7 +41,7 @@ export default function CommunityTrades() {
 
                     <BoxReveal duration={0.7}>
                     <p className="text-white/65 text-md w-full max-w-[500px]">
-                    In today&apos;s fast-moving markets, success comes down to having the right tools and insights at the right time. That&apos;s where we come in. Powered by advanced AI technology, our platform analyzes market trends, identifies opportunities, and delivers actionable insights—helping you make smarter, faster, and more profitable decisions. Whether you&apos;re day trading or navigating complex options strategies, we&apos;ve got your back with cutting-edge tools designed for peak performance.
+                    Our users don&apos;t just trade—they win. From capturing high-probability trades to managing risks effectively, traders using our AI-driven platform have seen consistent, measurable growth in their portfolios. Want to see how they&apos;re doing it? Join our thriving Discord community, connect with like-minded traders, and discover the strategies that are helping them succeed every day.
                     </p>
                     </BoxReveal>
 
