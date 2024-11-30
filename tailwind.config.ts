@@ -172,7 +172,7 @@ export default {
   					'opacity': '0.9'
   				},
   				'70%': {
-  					'opacity': '0.5'
+  					'opacity': '0.7'
   				},
   				to: {
   					'opacity': '1'

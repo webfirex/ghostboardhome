@@ -171,11 +171,11 @@ export const SkeletonThree = () => {
 
 export default function Features() {
     return (
-        <div className="flex flex-col items-center w-full relative my-7 -mt-80 bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-top">
-            <div className="flex w-full max-w-[1500px] py-80 px-3 justify-center items-center flex-wrap">
+        <div className="flex flex-col items-center w-full relative my-7 -mt-80 md:bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-top">
+            <div className="flex w-full max-w-[1500px] pt-80 px-3 justify-center items-center flex-wrap">
                 
-                <div className="flex flex-col w-full px-3 justify-center items-center z-10 gap-7">
-                    <div className="flex flex-col items-center w-full gap-1">
+                <div className="flex flex-col w-full px-3 justify-center items-center z-10">
+                    <div className="flex flex-col items-center w-full gap-1 mb-7">
                         <div className="flex gap-1 w-full justify-center">
                             <GradualSpacing
                               direction="left"
@@ -199,7 +199,12 @@ export default function Features() {
                           text="Outperform, Adapt, and Maximize Your Profits"
                         />
                     </div>
+
                     <FeaturesSection />
+
+                    <div className="flex gap-4 justify-center items-center">
+                        <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 px-14">Exlplore All</RainbowButton>
+                    </div>
                 </div>
                 
             </div>
