@@ -15,6 +15,7 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
+import BoxReveal from "../ui/box-reveal";
 
 export function FeaturesSection() {
   const features = [
@@ -84,7 +85,7 @@ const FeatureCard = ({
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p className=" max-w-5xl mx-auto text-left tracking-tight text-primaryLight text-xl md:text-2xl md:leading-snug">
-      {children}
+        <BoxReveal duration={0.7}>{children}</BoxReveal>
     </p>
   );
 };
@@ -98,7 +99,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
         "text-left max-w-sm mx-0 md:text-sm my-2"
       )}
     >
-      {children}
+        <BoxReveal duration={0.7}>{children}</BoxReveal>
     </p>
   );
 };
@@ -203,7 +204,7 @@ export default function Features() {
                     <FeaturesSection />
 
                     <div className="flex gap-4 justify-center items-center">
-                        <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 px-14">Exlplore All</RainbowButton>
+                        <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 px-14">Exlplore All Modules</RainbowButton>
                     </div>
                 </div>
                 
