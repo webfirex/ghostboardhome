@@ -109,7 +109,7 @@ const ExchangeCard = ({
 
 export default function StocksMarquee() {
   return (
-    <div className="relative flex w-full justify-between items-center flex-col overflow-hidden my-24">
+    <div className="relative flex w-full justify-between items-center flex-col overflow-hidden my-24 z-10 bg-black/10 py-7 backdrop-blur-lg">
       <Marquee pauseOnHover className="[--duration:50s]">
         {exchanges.map((exchange) => (
           <ExchangeCard key={exchange.ticker} {...exchange} />

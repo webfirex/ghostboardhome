@@ -19,7 +19,7 @@ import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 export function FeaturesSection() {
   const features = [
     {
-      title: "Track issues effectively",
+      title: "Track issues effectively 1",
       description:
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne img='/modules/flow.png' />,
@@ -27,7 +27,7 @@ export function FeaturesSection() {
         "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
     },
     {
-      title: "Capture pictures with AI",
+      title: "Capture pictures with AI 1",
       description:
         "Capture stunning photos effortlessly using our advanced AI technology.",
       skeleton: <SkeletonTwo img='/modules/darkpool.png' />,
@@ -171,8 +171,8 @@ export const SkeletonThree = () => {
 
 export default function Features() {
     return (
-        <div className="flex flex-col items-center w-full relative my-7 bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-top">
-            <div className="flex w-full max-w-[1500px] py-7 px-3 justify-center items-center flex-wrap">
+        <div className="flex flex-col items-center w-full relative my-7 -mt-80 bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-top">
+            <div className="flex w-full max-w-[1500px] py-80 px-3 justify-center items-center flex-wrap">
                 
                 <div className="flex flex-col w-full px-3 justify-center items-center z-10 gap-7">
                     <div className="flex flex-col items-center w-full gap-1">
@@ -203,7 +203,7 @@ export default function Features() {
                 </div>
                 
             </div>
-            {/* <GlowBg /> */}
+            <GlowBg />
         </div>
     )
 }
