@@ -27,7 +27,7 @@ export default function HeroSection() {
                             </span>
 
                             <p className="text-center text-white/65 text-sm w-full max-w-[650px]">
-                            Ghostboard equips U.S. traders with real-time institutional data, advanced options analytics, and customizable tools. Maximize profits, minimize risks, and stay ahead in the fast-moving world of day and options trading. For just $49 / month, Ghostboard pays for itself with your next winning trade.
+                            Advanced Dashboard Empowering Traders & Investors With Real-Time Institutional Level Data & Tools. Use Wall St Level Tools Powered By AI For Just $49/ Month & Reveal Game Changing Stock Options Data
                             </p>
 
                             <div className="flex gap-4 justify-center items-center mt-4">
