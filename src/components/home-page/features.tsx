@@ -185,7 +185,7 @@ export default function Features() {
                             /> &nbsp;
                             <GradualSpacing
                               direction="left"
-                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-4xl italic"   
+                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-4xl"   
                               text="Features"
                             /> &nbsp;
                             <GradualSpacing

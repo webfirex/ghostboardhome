@@ -5,6 +5,130 @@ import Link from "next/link";
 import BoxReveal from "../ui/box-reveal";
 import GradualSpacing from "../ui/gradual-spacing";
 
+import { cn } from "@/lib/utils";
+import Marquee from "../ui/marquee";
+import { RainbowButton } from "../ui/rainbow-button";
+
+const exchanges = [
+    {
+        ticker: 'SPY',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'CALL'
+    },
+    {
+        ticker: 'QQQ',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'PUT'
+    },
+    {
+        ticker: 'SPX',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'CALL'
+    },
+    {
+        ticker: 'AAPL',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'PUT'
+    },
+    {
+        ticker: 'ABDE',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'CALL'
+    },
+    {
+        ticker: 'IBM',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'CALL'
+    },
+    {
+        ticker: 'NSY',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'PUT'
+    },
+    {
+        ticker: 'TQQQ',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'CALL'
+    },
+    {
+        ticker: 'AMD',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'PUT'
+    },
+    {
+        ticker: 'COIN',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'PUT'
+    },
+    {
+        ticker: 'MSTR',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'CALL'
+    },
+    {
+        ticker: 'AMZN',
+        rate: '43500.04',
+        changeRate: '+2.53%',
+        state: 'PUT'
+    }
+]
+
+const ExchangeCard = ({
+  ticker,
+  rate,
+  changeRate,
+  state,
+}: {
+  ticker: string;
+  rate: string;
+  changeRate: string;
+  state: string;
+}) => {
+  return (
+    <figure
+      className={cn(
+        "relative cursor-pointer overflow-hidden rounded-xl p-2 mx-7"
+      )}
+    >
+      <div className="flex flex-row items-center gap-4">
+        <p className="text-4xl font-medium text-white uppercase">{ticker}</p>
+        <div className="flex flex-col">
+          <p className={cn("text-lg", ' text-zinc-400 font-light')}>{rate}</p>
+          <div className="flex items-center gap-1">
+            <p className={cn("text-xs", state === 'CALL' ? ' text-green-500 ' : ' text-red-500 ')}>{changeRate}</p>
+            <p className={cn("text-xs", state === 'CALL' ? ' text-green-500 ' : ' text-red-500 ')}>{state === 'CALL' ? '▲' : '▼'}</p>
+          </div>
+        </div>
+      </div>
+    </figure>
+  );
+};
+
+export function TradesMarquee() {
+  return (
+    <div className="relative flex w-full justify-between items-center flex-col overflow-hidden z-10 py-7 " style={{maskImage: 'linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)'}}>
+      <Marquee pauseOnHover className="[--duration:50s]">
+        {exchanges.map((exchange) => (
+          <ExchangeCard key={exchange.ticker} {...exchange} />
+        ))}
+      </Marquee>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-dark/70"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6"></div>
+    </div>
+  );
+}
+
 export default function CommunityTrades() {
     return (
         <div className="flex flex-col items-center w-full my-7 md:bg-[url(/com-bg.png)] bg-no-repeat bg-cover bg-bottom">
@@ -41,18 +165,22 @@ export default function CommunityTrades() {
 
                     <BoxReveal duration={0.7}>
                     <p className="text-white/65 text-md w-full max-w-[500px]">
-                    Our users don&apos;t just trade—they win. From capturing high-probability trades to managing risks effectively, traders using our AI-driven platform have seen consistent, measurable growth in their portfolios. Want to see how they&apos;re doing it? Join our thriving Discord community, connect with like-minded traders, and discover the strategies that are helping them succeed every day.
+                    Our users don&apos;t just trade—they win. With our AI-driven tools, traders have seen measurable growth in their portfolios. Join our Discord community to connect, learn, and see the strategies driving their success!
                     </p>
                     </BoxReveal>
 
+                    {/* <TradesMarquee /> */}
+
                     <div className="flex gap-4 w-full justify-start mt-4">
+                        <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7">✨ Start your free trial now ✨</RainbowButton>
                         <BoxReveal duration={0.7}>
-                        <Link href={'/account'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-primaryLight py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
-                            Check our plans
+                        <Link href={'/account'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-white py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
+                            Join our community
                             <IconArrowNarrowRight className=" origin-bottom" />
                         </Link>
                         </BoxReveal>
                     </div>
+                    
                 </div>
                 
                 <div className="flex flex-col w-1/2 max-[500]:w-full px-3 justify-center items-center z-10 gap-7">
