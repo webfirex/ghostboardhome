@@ -10,6 +10,7 @@ import { CardContainer, CardItem } from "../ui/3d-card";
 import NumberTicker from "../ui/number-ticker";
 import { WhyUsCards } from "@/data/modules";
 import BoxReveal from "../ui/box-reveal";
+import WordRotate from "../ui/word-rotate";
 
 export default function WhyUs() {
     return (

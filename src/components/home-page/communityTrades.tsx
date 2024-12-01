@@ -1,6 +1,6 @@
 import { manrope } from "@/utils/font";
 import { Image } from "@mantine/core";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
+import { IconArrowNarrowRight, IconChecks } from "@tabler/icons-react";
 import Link from "next/link";
 import BoxReveal from "../ui/box-reveal";
 import GradualSpacing from "../ui/gradual-spacing";
@@ -8,6 +8,7 @@ import GradualSpacing from "../ui/gradual-spacing";
 import { cn } from "@/lib/utils";
 import Marquee from "../ui/marquee";
 import { RainbowButton } from "../ui/rainbow-button";
+import WordRotate from "../ui/word-rotate";
 
 const exchanges = [
     {
@@ -170,6 +171,23 @@ export default function CommunityTrades() {
                     </BoxReveal>
 
                     {/* <TradesMarquee /> */}
+
+                    <div className="flex gap-4 items-center">
+                      <IconChecks color="lightGreen" size={'25'} />
+                      <WordRotate
+                        className="text-2xl font-extralight text-white"
+                        words={[
+                          "Spot and predict trades with AI precision.",
+                          "Understand volatility to maximize trade opportunities.",
+                          "Track hidden institutional activity for market insight.",
+                          "Monitor liquidity for better entry and exits.",
+                          "Detect trade opportunities with instant notifications.",
+                          "Align strategies with market-moving events.",
+                          "Learn from professionals making consistent profits.",
+                          "Trade live with experts for actionable insights."
+                        ]}
+                      />
+                    </div>
 
                     <div className="flex gap-4 w-full justify-start mt-4">
                         <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7">✨ Start your free trial now ✨</RainbowButton>
