@@ -25,7 +25,7 @@ export default function WhyUs() {
                     <div className="flex flex-col w-full items-start gap-4 mb-7">
                         <hr className="w-full opacity-40" />
                         <p className="text-white/65 text-xs max-w-[650px] uppercase">
-                            Ghostboard equips
+                            Powered By AI
                         </p>
                     </div>
                     </BoxReveal>
