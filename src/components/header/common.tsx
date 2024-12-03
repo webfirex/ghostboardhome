@@ -55,7 +55,7 @@ export default function Header() {
             <div className="w-full bg-primaryDark/20 flex justify-between items-center backdrop-blur-lg py-2">
                 <p></p>
                 <Link href={''} className="text-center text-white text-sm transition-all flex gap-1 pr-2 hover:gap-2 hover:pr-1">
-                    ✨ CYBER MONDAY SALE ✨ 🏷️ 30% OFF ALL PLANS | USE CODE “CYBER30” ! JOIN NOW <span>▸</span>
+                    ✨ CYBER MONDAY SALE 🏷️ 30% OFF ALL PLANS | USE CODE “CYBER30” ! JOIN NOW <span>▸</span>
                 </Link>
                 <button className="text-white px-2 cursor-pointer" onClick={() => (setSubhead(false))}>x</button>
             </div>}
