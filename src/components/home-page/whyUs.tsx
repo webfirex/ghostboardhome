@@ -20,7 +20,6 @@ export default function WhyUs() {
                 
                 <div className="flex flex-col w-1/2 min-[780px]:w-1/2 px-3 justify-center z-10 gap-4">
 
-
                     <BoxReveal duration={0.7} className="w-1/2">
                     <div className="flex flex-col w-full items-start gap-4 mb-7">
                         <hr className="w-full opacity-40" />
