@@ -31,8 +31,8 @@ export default function HeroSection() {
                             </p>
 
                             <div className="flex gap-4 justify-center items-center mt-4">
-                                <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7"> ✨ Try Now For Free</RainbowButton>
-                                <Link href={'/account'} className={manrope.className + " flex items-center justify-center gap-2 scale-[0.98] hover:scale-100 transition-all font-light text-white px-8 py-3 text-nowrap hover:underline underline-offset-4 "}>
+                                <Link href={'https://ghostboard.net/auth/sign-up'}><RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7"> ✨ Try Now For Free</RainbowButton></Link>
+                                <Link href={'https://www.youtube.com/@GHOSTBOARD/videos'} className={manrope.className + " flex items-center justify-center gap-2 scale-[0.98] hover:scale-100 transition-all font-light text-white px-8 py-3 text-nowrap hover:underline underline-offset-4 "}>
                                     How It Works
                                     <IconArrowNarrowRight />
                                 </Link>

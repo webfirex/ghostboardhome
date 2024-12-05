@@ -204,7 +204,7 @@ export default function Features() {
                     <FeaturesSection />
 
                     <div className="flex gap-4 justify-center items-center">
-                        <RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 px-14">Exlplore All Modules</RainbowButton>
+                        <Link href={'https://ghostboard.net/auth/sign-up'}><RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 px-14">Exlplore All Modules</RainbowButton></Link>
                     </div>
                 </div>
                 

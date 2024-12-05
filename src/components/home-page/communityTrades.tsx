@@ -40,7 +40,7 @@ export default function CommunityTrades() {
 
                     <div className="flex gap-4 w-full justify-start mt-4">
                         <BoxReveal duration={0.7}>
-                        <Link href={'/account'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-primaryLight py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
+                        <Link href={'https://ghostboard.net/pricing'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-primaryLight py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
                             Check our plans
                             <IconArrowNarrowRight className=" origin-bottom" />
                         </Link>

@@ -62,7 +62,7 @@ export default function Header() {
 
             <div className="w-full max-w-[1500px] flex justify-between items-center h-full mt-3">
                 <div className="flex justify-end h-full items-center max-w-[200px] gap-2">
-                    <Link href={'/account'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
+                    <Link href={'https://discord.gg/RHSp35qM'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
                         <Image src={'/icons/discord.png'} h={'30px'} />
                         Join Discord
                     </Link>
@@ -73,7 +73,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="flex justify-end h-full items-center max-w-[200px] gap-2">
-                    <Link href={'/account'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
+                    <Link href={'https://ghostboard.net/pricing'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
                         <BorderBeam size={70} />
                         Sign Up
                         <IconGhost2 stroke={'1px'} />
