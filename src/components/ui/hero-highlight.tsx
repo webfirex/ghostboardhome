@@ -92,5 +92,6 @@ export const Highlight = ({
     >
       {children}
     </motion.span>
+    // 2e28a3
   );
 };

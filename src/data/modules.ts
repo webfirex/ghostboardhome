@@ -2,21 +2,21 @@ export const WhyUsCards = [
     {
         number: 12,
         symbol: '+',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptates possimus quod distinctio corporis esse mollitia nam illo voluptate.',
+        text: 'Empower your trading with 12+ advanced modules tailored to analyze markets and predict profitable opportunities.',
     },
     {
-        number: 198,
+        number: 298,
         symbol: '+',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptates possimus quod distinctio corporis esse mollitia nam illo voluptate.',
+        text: 'Be part of a growing community of traders, with live streams, expert advice, and shared success stories.',
     },
     {
-        number: 750,
+        number: 3900,
         symbol: '+',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptates possimus quod distinctio corporis esse mollitia nam illo voluptate.',
+        text: 'Trusted by thousands of traders for delivering consistent profits through cutting-edge AI insights and tools.',
     },
     {
-        number: 100,
+        number: 5000,
         symbol: '+',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptates possimus quod distinctio corporis esse mollitia nam illo voluptate.',
+        text: 'Gain the edge with precise detection of unusual market activity, helping you seize hidden opportunities effectively.',
     },
 ]

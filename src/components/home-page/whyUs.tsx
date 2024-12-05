@@ -17,6 +17,26 @@ export default function WhyUs() {
     return (
         <div className="flex flex-col items-center w-full my-7 md:bg-[url(/com-bg.png)] bg-no-repeat bg-cover bg-top">
             
+            <div className="flex w-full max-w-[1500px] px-3 justify-center items-center flex-wrap md:-mt-28">
+                
+                {WhyUsCards.map((item, index) => (
+                    <div className="flex flex-col w-1/4 px-2 justify-center gap-4" key={index}>
+                        <CardContainer className="inter-var border border-primary/35 p-10 w-full rounded-3xl cursor-default">
+                            <CardItem
+                              translateZ="60"
+                              className="text-sm max-w-sm my-5 w-full"
+                            >
+                                <p className={manrope.className + " text-5xl !font-thin tracking-tighter text-primaryLight w-full mb-4"}>
+                                  <NumberTicker value={item.number} className={" text-primaryLight font-medium text-6xl"} />{item.symbol}
+                                </p>
+                                <p className="text-sm text-zinc-400 w-full">{item.text}</p>
+                            </CardItem>
+                        </CardContainer>
+                    </div>
+                ))}
+                
+            </div>
+
             <div className="flex w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
                 
                 <div className="flex flex-col w-1/2 min-[780px]:w-1/2 px-3 justify-center z-10 gap-4">
@@ -87,25 +107,6 @@ export default function WhyUs() {
                 
             </div>
 
-            <div className="flex w-full max-w-[1500px] px-3 justify-center items-center flex-wrap">
-                
-                {WhyUsCards.map((item, index) => (
-                    <div className="flex flex-col w-1/4 px-2 justify-center gap-4" key={index}>
-                        <CardContainer className="inter-var border border-primary/35 p-10 w-full rounded-3xl cursor-default">
-                            <CardItem
-                              translateZ="60"
-                              className="text-sm max-w-sm my-5 w-full"
-                            >
-                                <p className={manrope.className + " text-5xl !font-thin tracking-tighter text-primaryLight w-full mb-4"}>
-                                  <NumberTicker value={item.number} className={" text-primaryLight font-medium text-6xl"} />{item.symbol}
-                                </p>
-                                <p className="text-sm text-zinc-400 w-full">{item.text}</p>
-                            </CardItem>
-                        </CardContainer>
-                    </div>
-                ))}
-                
-            </div>
         </div>
     )
 }

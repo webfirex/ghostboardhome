@@ -27,7 +27,7 @@ export default function HeroSection() {
                             </span>
 
                             <p className="text-center text-white/65 text-sm w-full max-w-[650px]">
-                            Advanced Dashboard Empowering Traders & Investors With Real-Time Institutional Level Data & Tools. Use Wall St Level Tools Powered By AI For Just $49/ Month & Reveal Game Changing Stock Options Data
+                            Advanced Dashboard Empowering Traders & Investors With Real-Time Institutional Level Data & Tools. Use Wall Street Level Tools Powered By AI For Just $49 / Month & Reveal Game Changing Stock Options Data
                             </p>
 
                             <div className="flex gap-4 justify-center items-center mt-4">

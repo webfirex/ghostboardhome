@@ -20,14 +20,6 @@ import BoxReveal from "../ui/box-reveal";
 export function FeaturesSection() {
   const features = [
     {
-      title: "Uncover Market Moves in Real-Time",
-      description:
-        "Track large-scale trades to identify trends and stay ahead of institutional activity.",
-      skeleton: <SkeletonOne img='/modules/flow.png' />,
-      className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
-    },
-    {
       title: "Reveal Hidden Institutional Trades",
       description:
         "Access insider-like data from dark pools to track undisclosed market movements",
@@ -35,11 +27,12 @@ export function FeaturesSection() {
       className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
     },
     {
-      title: "Decode Market Volatility Dynamics",
+      title: "Uncover Market Moves in Real-Time",
       description:
-        "Analyze gamma exposure to anticipate market shifts and gain a tactical edge",
-      skeleton: <SkeletonTwo img='/modules/netgamma.png' />,
-      className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
+        "Monitor large-scale trades to spot emerging trends and stay one step ahead of institutional market movements.",
+      skeleton: <SkeletonOne img='/modules/flow.png' />,
+      className:
+        "col-span-1 lg:col-span-4 border-b lg:border-l border-neutral-800",
     },
     {
       title: "AI Insights for Smarter Trades",
@@ -47,7 +40,14 @@ export function FeaturesSection() {
         "Leverage AI-powered analysis to predict market behavior and optimize your trading strategies",
       skeleton: <SkeletonOne img='/modules/flowai.png' />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-l border-neutral-800",
+        "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
+    },
+    {
+      title: "Decode Market Volatility Dynamics",
+      description:
+        "Analyze gamma exposure to anticipate market shifts and gain a tactical edge",
+      skeleton: <SkeletonTwo img='/modules/netgamma.png' />,
+      className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
     },
   ];
   return (
