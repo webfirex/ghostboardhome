@@ -55,7 +55,7 @@ export default function Header() {
             <div className="w-full bg-primaryDark/20 flex justify-between items-center backdrop-blur-lg py-2">
                 <p></p>
                 <Link href={''} className="text-center text-white text-sm transition-all flex gap-1 pr-2 hover:gap-2 hover:pr-1">
-                    ✨ CYBER MONDAY SALE 🏷️ 30% OFF ALL PLANS | USE CODE “CYBER30” ! JOIN NOW <span>▸</span>
+                    ✨ CYBER MONDAY SALE  30% OFF ALL PLANS | USE CODE “CYBER30” 🏷️ JOIN NOW <span>▸</span>
                 </Link>
                 <button className="text-white px-2 cursor-pointer" onClick={() => (setSubhead(false))}>x</button>
             </div>}
@@ -73,7 +73,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="flex justify-end h-full items-center max-w-[200px] gap-2">
-                    <Link href={'https://ghostboard.net/pricing'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
+                    <Link href={'https://ghostboard.net/auth/sign-up'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
                         <BorderBeam size={70} />
                         Sign Up
                         <IconGhost2 stroke={'1px'} />

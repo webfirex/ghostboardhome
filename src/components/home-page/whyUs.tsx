@@ -42,7 +42,7 @@ export default function WhyUs() {
                         <GradualSpacing
                         direction="left"
                           className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-4xl"
-                          text="What Aren't You ?"
+                          text="Why Aren't You ?"
                         />
                     </div>
 
