@@ -61,18 +61,18 @@ export default function Header() {
             </div>}
 
             <div className="w-full max-w-[1500px] flex justify-between items-center h-full mt-3">
-                <div className="flex justify-end h-full items-center max-w-[200px] gap-2">
+                <div className="flex justify-end h-full items-start sm:items-center max-w-[200px] gap-2">
                     <Link href={'https://discord.gg/RHSp35qM'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-3 sm:px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
                         <Image src={'/icons/discord.png'} h={'30px'} w={'30px'} />
                         <span className=" hidden sm:block">Join Discord</span>
                     </Link>
                 </div>
-                <div className="flex justify-start h-full items-center max-w-[200px] w-full">
+                <div className="flex justify-start h-full pt-3 sm:pt-0 items-start sm:items-center max-w-[200px] w-full">
                     <Link href={'/'} id="headerLogo" className=" transition-opacity">
                         <Image src={'/logo-h.png'} className="w-full" />
                     </Link>
                 </div>
-                <div className="flex justify-end h-full items-center max-w-[200px] gap-2">
+                <div className="flex justify-end h-full items-start sm:items-center max-w-[200px] gap-2">
                     <Link href={'https://ghostboard.net/auth/sign-up'} className={manrope.className + " hidden sm:flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
                         <BorderBeam size={70} />
                         Sign Up
