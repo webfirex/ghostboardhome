@@ -75,7 +75,7 @@ export default function WhyUs() {
                     <div className="flex gap-4 items-center justify-center xl:justify-start">
                       <IconChecks color="lightGreen" size={'25'} />
                       <WordRotate
-                        className="text-2xl font-extralight text-white"
+                        className="xl:text-2xl text-md font-extralight text-white"
                         words={[
                           "Spot and predict trades with AI precision.",
                           "Understand volatility to maximize trade opportunities.",
@@ -89,8 +89,8 @@ export default function WhyUs() {
                       />
                     </div>
 
-                    <div className="flex gap-4 w-full xl:justify-start justify-center mt-4">
-                        <Link href={'https://ghostboard.net/auth/sign-up'}><RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7">✨ Start your free trial now ✨</RainbowButton></Link>
+                    <div className="flex gap-4 w-full xl:justify-start justify-center mt-4 flex-wrap">
+                        <Link href={'https://ghostboard.net/auth/sign-up'}><RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 text-nowrap">✨ Start your free trial now ✨</RainbowButton></Link>
                         <BoxReveal duration={0.7}>
                         <Link href={'https://discord.gg/RHSp35qM'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-white py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
                             Join our community
