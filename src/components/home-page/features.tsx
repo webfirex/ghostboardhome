@@ -1,19 +1,10 @@
-import FlickerBg from "../effects/flicker";
-import AnimatedShinyText from "../ui/animated-shiny-text";
-import { Highlight } from "../ui/hero-highlight";
-import { IconArrowNarrowRight, IconArrowRight } from "@tabler/icons-react";
 import { RainbowButton } from "../ui/rainbow-button";
-import { manrope } from "@/utils/font";
 import Link from "next/link";
-import { ContainerScroll } from "../ui/container-scroll-animation";
 import { Image } from "@mantine/core";
 import GradualSpacing from "../ui/gradual-spacing";
 import GlowBg from "../effects/glow";
 import React from "react";
 import { cn } from "@/lib/utils";
-import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import BoxReveal from "../ui/box-reveal";
 
