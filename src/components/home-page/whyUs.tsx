@@ -15,7 +15,7 @@ import { Image } from "@mantine/core";
 
 export default function WhyUs() {
     return (
-        <div className="flex flex-col items-center w-full my-7 bg-[url(/com-bg.png)] bg-no-repeat bg-cover bg-top">
+        <div className="flex flex-col items-center w-full my-7 bg-[url(/com-bg.png)] bg-no-repeat bg-cover bg-top -mt-48 sm:mt-7">
             
             <div className="flex w-full max-w-[1500px] px-3 justify-center items-center flex-wrap md:-mt-28 py-20">
                 

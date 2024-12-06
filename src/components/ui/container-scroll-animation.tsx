@@ -28,7 +28,7 @@ export const ContainerScroll = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [0.7, 0.9] : [0.85, 1];
+    return isMobile ? [0.7, 1.05] : [0.85, 1];
   };
 
   const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
@@ -61,7 +61,7 @@ export const Header = ({ translate, titleComponent }: any) => {
       style={{
         translateY: translate,
       }}
-      className=" w-full text-center"
+      className=" w-full text-center -mt-40 sm:mt-0"
     >
       {titleComponent}
     </motion.div>
