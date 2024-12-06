@@ -187,8 +187,18 @@ export default function Features() {
                         </div>
                         <GradualSpacing
                         direction="left"
-                          className=" select-none pointer-events-none text-white text-2xl xl:text-4xl"
+                          className=" hidden sm:block select-none pointer-events-none text-white text-2xl xl:text-4xl"
                           text="Outperform, Adapt, and Maximize Your Profits"
+                        />
+                        <GradualSpacing
+                        direction="left"
+                          className=" sm:hidden block select-none pointer-events-none text-white text-2xl xl:text-4xl"
+                          text="Outperform, Adapt, and"
+                        />
+                        <GradualSpacing
+                        direction="left"
+                          className=" sm:hidden block select-none pointer-events-none text-white text-2xl xl:text-4xl"
+                          text="Maximize Your Profits"
                         />
                     </div>
 

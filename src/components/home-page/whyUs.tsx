@@ -39,26 +39,36 @@ export default function WhyUs() {
 
             <div className="flex w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
                 
-                <div className="flex flex-col w-full xl:w-1/2 px-3 justify-center items-center xl:items-start z-10 gap-4">
+                <div className="flex flex-col w-full xl:w-1/2 px-3 justify-center items-center xl:items-start z-10 gap-4 pb-20 xl:pb-0">
 
 
                     <BoxReveal duration={0.7} className="w-1/2">
                     <div className="flex flex-col w-full items-center xl:items-start gap-4 mb-7">
                         <hr className="w-full opacity-40" />
-                        <p className="text-white/65 text-xs max-w-[650px] uppercase">
+                        <p className="text-white/65 text-xs max-w-[650px] uppercase text-center sm:text-left">
                             STOP TRADING BLINDLY
                         </p>
                     </div>
                     </BoxReveal>
 
                     <div className="flex flex-col items-center xl:items-start w-full gap-1">
-                        <div className="flex gap-1 w-full justify-center xl:justify-start">
+                        <div className="sm:flex gap-1 w-full hidden justify-center xl:justify-start">
                             <GradualSpacing
                               direction="left"
                               className="select-none pointer-events-none text-white text-2xl xl:text-4xl"   
                               text="Every Second You Wait, Others Are Profiting"
                             />
                         </div>
+                        <GradualSpacing
+                          direction="left"
+                          className="select-none sm:hidden pointer-events-none text-white text-2xl xl:text-4xl"   
+                          text="Every Second You Wait"
+                        />
+                        <GradualSpacing
+                          direction="left"
+                          className="select-none sm:hidden pointer-events-none text-white text-2xl xl:text-4xl"   
+                          text="Others Are Profiting"
+                        />
                         <GradualSpacing
                         direction="left"
                           className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 xl:text-4xl text-2xl"
