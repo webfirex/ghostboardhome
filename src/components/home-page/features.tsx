@@ -163,7 +163,7 @@ export const SkeletonThree = () => {
 
 export default function Features() {
     return (
-        <div className="flex flex-col items-center w-full relative my-7 -mt-80 md:bg-[url(/ai-bg.png)] bg-no-repeat bg-contain bg-top">
+        <div className="flex flex-col items-center w-full relative my-7 -mt-80 bg-[url(/com-bg.png)] md:bg-[url(/ai-bg.png)] bg-no-repeat bg-cover md:bg-contain bg-top">
             <div className="flex w-full max-w-[1500px] pt-80 px-3 justify-center items-center flex-wrap">
                 
                 <div className="flex flex-col w-full px-3 justify-center items-center z-10">
@@ -171,23 +171,23 @@ export default function Features() {
                         <div className="flex gap-1 w-full justify-center">
                             <GradualSpacing
                               direction="left"
-                              className=" select-none pointer-events-none text-white text-4xl"   
+                              className=" select-none pointer-events-none text-white text-2xl xl:text-4xl"   
                               text="AI-Driven"
                             /> &nbsp;
                             <GradualSpacing
                               direction="left"
-                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-4xl"   
+                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-2xl xl:text-4xl"   
                               text="Features"
                             /> &nbsp;
                             <GradualSpacing
                               direction="left"
-                              className=" select-none pointer-events-none text-white text-4xl"   
+                              className=" select-none pointer-events-none text-white text-2xl xl:text-4xl"   
                               text="Built to"
                             />
                         </div>
                         <GradualSpacing
                         direction="left"
-                          className=" select-none pointer-events-none text-white text-4xl"
+                          className=" select-none pointer-events-none text-white text-2xl xl:text-4xl"
                           text="Outperform, Adapt, and Maximize Your Profits"
                         />
                     </div>

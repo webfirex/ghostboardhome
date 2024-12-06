@@ -12,11 +12,11 @@ export default function CommunityTrades() {
     return (
         <div className="flex flex-col items-center w-full my-7">
             
-            <div className="flex w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
+            <div className="flex flex-col-reverse sm:flex-row w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
                 
-                <div className="flex flex-col w-1/2 min-[780px]:w-1/2 px-3 justify-center z-10 gap-4">
+                <div className="flex flex-col w-full sm:w-1/2 px-3 justify-center z-10 gap-4">
 
-                    <BoxReveal duration={0.7} className="w-1/2">
+                    <BoxReveal duration={0.7} className="w-full sm:w-1/2">
                     <div className="flex flex-col w-full items-start gap-4 mb-7">
                         <hr className="w-full opacity-40" />
                         <p className="text-white/65 text-xs max-w-[650px] uppercase">
@@ -27,7 +27,7 @@ export default function CommunityTrades() {
 
 
                     <BoxReveal duration={0.7}>
-                    <span className=" select-none pointer-events-none whitespace-pre-wrap bg-gradient-to-br from-white to-zinc-300/80 bg-clip-text text-2xl font-normal leading-snug text-transparent">
+                    <span className=" select-none pointer-events-none whitespace-pre-wrap bg-gradient-to-br from-white to-zinc-300/80 bg-clip-text text-lg sm:text-2xl font-normal leading-snug text-transparent">
                         The Edge You Need
                     </span>
                     </BoxReveal>
@@ -48,23 +48,20 @@ export default function CommunityTrades() {
                     </div>
                 </div>
                 
-                <div className="flex flex-col w-1/2 max-[500]:w-full px-3 justify-center items-start z-10 gap-7">
-                    <div className="flex flex-col items-end w-full gap-1">
-                        <div className="flex gap-1 w-full justify-end">
+                <div className="flex flex-col w-full sm:w-1/2 px-3 justify-center items-start z-10 gap-7">
+                    <div className="flex flex-col items-center sm:items-end w-full gap-1">
+                        <div className="flex gap-1 w-full justify-center sm:justify-end">
                             <GradualSpacing
-                              direction="left"
-                              className=" select-none pointer-events-none text-white text-4xl"   
+                              className=" select-none pointer-events-none text-white text-2xl xl:text-4xl"   
                               text="Why Traders"
                             /> &nbsp;
                             <GradualSpacing
-                              direction="left"
-                              className={manrope.className + " select-none pointer-events-none text-primaryLight text-4xl font-semibold underline underline-offset-4 bg-gradient-to-br  from-[#9C4BE9] to-[#2A73F9] bg-clip-text text-transparent"}
+                              className={manrope.className + " select-none pointer-events-none text-primaryLight text-2xl xl:text-4xl font-semibold underline underline-offset-4 bg-gradient-to-br  from-[#9C4BE9] to-[#2A73F9] bg-clip-text text-transparent"}
                               text="Trust Us"
                             />
                         </div>
                         <GradualSpacing
-                        direction="left"
-                          className=" select-none pointer-events-none text-white text-4xl"
+                          className=" select-none pointer-events-none text-white text-2xl xl:text-4xl"
                           text="to Stay Ahead of the Market"
                         />
                     </div>
