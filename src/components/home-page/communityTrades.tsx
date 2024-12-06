@@ -56,7 +56,7 @@ export default function CommunityTrades() {
                               text="Why Traders"
                             /> &nbsp;
                             <GradualSpacing
-                              className={manrope.className + " select-none pointer-events-none text-primaryLight text-2xl xl:text-4xl font-semibold underline underline-offset-4 bg-gradient-to-br  from-[#9C4BE9] to-[#2A73F9] bg-clip-text text-transparent"}
+                              className={manrope.className + " select-none pointer-events-none text-primaryLight text-2xl xl:text-4xl font-semibold bg-gradient-to-br  from-[#9C4BE9] to-[#2A73F9] bg-clip-text text-transparent"}
                               text="Trust Us"
                             />
                         </div>

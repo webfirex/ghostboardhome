@@ -176,7 +176,7 @@ export default function Features() {
                             /> &nbsp;
                             <GradualSpacing
                               direction="left"
-                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-2xl xl:text-4xl"   
+                              className=" select-none pointer-events-none text-primaryLight underline underline-offset-4 text-2xl xl:text-4xl bg-gradient-to-br from-[#9C4BE9] to-[#2A73F9] bg-clip-text text-transparent"   
                               text="Features"
                             /> &nbsp;
                             <GradualSpacing
