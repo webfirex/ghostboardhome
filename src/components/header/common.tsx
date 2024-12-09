@@ -3,7 +3,7 @@ import { manrope } from "@/utils/font";
 import { Image } from "@mantine/core";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { IconGhost2, IconMenu2 } from '@tabler/icons-react'
+import { IconGhost2, IconMenu2, IconRocket } from '@tabler/icons-react'
 import { BorderBeam } from "../ui/border-beam";
 
 export default function Header() {
@@ -78,9 +78,9 @@ export default function Header() {
                         Sign Up
                         <IconGhost2 stroke={'1px'} />
                     </Link>
-                    <button className={manrope.className + " bg-white/5 border-[0.2px] border-white/10 scale-95 hover:scale-100 transition-all rounded-full font-bold text-white px-5 py-3 backdrop-blur-lg"}>
-                        <IconMenu2 stroke={'1px'} />
-                    </button>
+                    <a href="https://ghostboard.net/dashboard" className={manrope.className + " bg-white/5 border-[0.2px] border-white/10 scale-95 hover:scale-100 transition-all rounded-full font-bold text-white px-5 py-3 backdrop-blur-lg"}>
+                        <IconRocket stroke={'1px'} />
+                    </a>
                 </div>
             </div>
 

@@ -3,6 +3,8 @@ import LoadAnimation from "@/components/animations/loadAnimation";
 import CommunityTrades from "@/components/home-page/communityTrades";
 import Features from "@/components/home-page/features";
 import HeroSection from "@/components/home-page/hero";
+import ProfitsMarquee from "@/components/home-page/profitsSlide";
+import Reviews from "@/components/home-page/reviews";
 import StocksMarquee from "@/components/home-page/stocksSlide";
 import WhyUs from "@/components/home-page/whyUs";
 import Image from "next/image";
@@ -62,6 +64,8 @@ export default function Home() {
         <StocksMarquee />
         <Features />
         <CommunityTrades />
+        <Reviews />
+        <ProfitsMarquee />
       </div>
 
     </>
