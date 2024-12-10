@@ -4,13 +4,11 @@ import { IconArrowNarrowRight, IconChecks } from "@tabler/icons-react";
 import Link from "next/link";
 import BoxReveal from "../ui/box-reveal";
 import GradualSpacing from "../ui/gradual-spacing";
-
-import { RainbowButton } from "../ui/rainbow-button";
-import WordRotate from "../ui/word-rotate";
+import GlowBg from "../effects/glow";
 
 export default function CommunityTrades() {
     return (
-        <div className="flex flex-col items-center w-full my-7 bg-[url(/com3-bg.png)] bg-no-repeat bg-cover bg-bottom h-screen">
+        <div className="flex flex-col items-center w-full my-7 bg-[url(/com3-bg.png)] bg-no-repeat bg-cover bg-bottom h-screen relative">
             
             <div className="flex flex-col-reverse sm:flex-row w-full max-w-[1500px] pt-7 px-3 justify-center items-center flex-wrap">
                 
@@ -69,6 +67,8 @@ export default function CommunityTrades() {
                 </div>
                 
             </div>
+            
+            <GlowBg />
 
         </div>
     )

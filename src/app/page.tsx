@@ -1,6 +1,8 @@
 'use client'
 import LoadAnimation from "@/components/animations/loadAnimation";
+import ComingUp from "@/components/home-page/comingUp";
 import CommunityTrades from "@/components/home-page/communityTrades";
+import FaqSection from "@/components/home-page/faqs";
 import Features from "@/components/home-page/features";
 import HeroSection from "@/components/home-page/hero";
 import ProfitsMarquee from "@/components/home-page/profitsSlide";
@@ -66,6 +68,8 @@ export default function Home() {
         <CommunityTrades />
         <Reviews />
         <ProfitsMarquee />
+        <FaqSection />
+        <ComingUp />
       </div>
 
     </>
