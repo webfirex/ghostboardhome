@@ -4,12 +4,11 @@ import Link from "next/link";
 import BoxReveal from "../ui/box-reveal";
 import GradualSpacing from "../ui/gradual-spacing";
 import { RainbowButton } from "../ui/rainbow-button";
-import GlowBg from "../effects/glow";
 import { Image } from "@mantine/core";
 
 export default function ComingUp() {
     return(
-        <div className="flex flex-col items-center w-full bg-[url(/com5-bg.png)] bg-no-repeat bg-cover bg-bottom relative -mt-60">
+        <div className="flex flex-col items-center w-full bg-[url(/com5-bg.png)] bg-no-repeat bg-cover bg-bottom relative sm:-mt-60">
             
             <div className="flex flex-col sm:flex-row w-full max-w-[1500px] pt-7 px-3 justify-start items-start flex-wrap">
 

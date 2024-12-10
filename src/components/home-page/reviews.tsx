@@ -9,7 +9,7 @@ import AvatarCircles from "../ui/avatar-circles";
 
 export default function Reviews() {
     return (
-        <div className="flex flex-col items-center w-full relative my-7 -mt-[35vh] bg-transparent">
+        <div className="flex flex-col items-center w-full relative my-7  sm:-mt-[35vh] bg-transparent">
             <div className="flex w-full max-w-[1500px] pt-14 px-3 justify-center items-center flex-wrap bg-transparent">
                 
                 <div className="flex flex-col w-full px-3 justify-center items-center z-10">
