@@ -8,7 +8,7 @@ import { Image } from "@mantine/core";
 
 export default function ComingUp() {
     return(
-        <div className="flex flex-col items-center w-full bg-[url(/com5-bg.png)] bg-no-repeat bg-cover bg-bottom relative sm:-mt-60">
+        <div className="flex flex-col items-center w-full bg-[url(/com5-bg.png)] bg-no-repeat bg-contain sm:bg-cover bg-bottom relative sm:-mt-60">
             
             <div className="flex flex-col sm:flex-row w-full max-w-[1500px] pt-7 px-3 justify-start items-start flex-wrap">
 

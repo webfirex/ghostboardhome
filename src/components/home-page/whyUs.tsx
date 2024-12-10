@@ -82,7 +82,7 @@ export default function WhyUs() {
                     </p>
                     </BoxReveal>
 
-                    <div className="flex gap-4 items-center justify-center xl:justify-start">
+                    <div className="flex gap-4 items-center justify-center xl:justify-start h-[70px] sm:h-fit">
                       <IconChecks color="lightGreen" size={'25'} />
                       <WordRotate
                         className="xl:text-2xl text-md font-extralight text-white"
