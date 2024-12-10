@@ -17,7 +17,7 @@ export default function ComingUp() {
                 </div>
                 
                 <div className="flex flex-col w-full sm:w-1/2 justify-center items-start z-10 gap-7 min-h-[600px]">
-                    <div className="flex flex-col items-center sm:items-start w-full gap-1">
+                    <div className="flex flex-col items-start w-full gap-1">
                         <BoxReveal duration={0.7} className="w-full sm:w-1/2">
                         <div className="flex flex-col w-full items-start gap-4 mb-7">
                             <hr className="w-full opacity-40" />
@@ -26,7 +26,7 @@ export default function ComingUp() {
                             </p>
                         </div>
                         </BoxReveal>
-                        <div className="flex gap-1 w-full justify-center sm:justify-start">
+                        <div className="flex gap-1 w-full justify-start">
                             <GradualSpacing
                               className={manrope.className + " select-none pointer-events-none text-primaryLight text-2xl xl:text-4xl font-semibold bg-gradient-to-br  from-[#9C4BE9] to-[#2A73F9] bg-clip-text text-transparent"}
                               text="A Glimpse"
@@ -51,7 +51,7 @@ export default function ComingUp() {
                             <span className="text-white">• Daily Updates & Notifications:</span> Never miss critical market events with real-time alerts and updates, right in the app. <br />
                         </p>
                         </BoxReveal>
-                        <div className="flex gap-4 justify-center items-center mt-12 flex-wrap">
+                        <div className="flex gap-4 items-center mt-12 flex-wrap w-full justify-center sm:justify-start">
                             <Link href={'https://ghostboard.net/auth/sign-up'}><RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 px-14 text-nowrap">Start Your Free Trial Now </RainbowButton></Link>
                         </div>
                     </div>
