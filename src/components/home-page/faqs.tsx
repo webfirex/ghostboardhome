@@ -8,7 +8,7 @@ import { FaqAccordion } from "./faq/faq";
 
 export default function FaqSection() {
     return (
-        <div className="flex flex-col items-center w-full my-7 bg-[url(/com4-bg.png)] bg-no-repeat bg-cover bg-top min-h-screen">
+        <div className="flex flex-col items-center w-full my-7 bg-[url(/com4-bg.png)] bg-no-repeat bg-cover bg-bottom 2xl:bg-contain min-h-screen">
             
             <div className="flex flex-col sm:flex-row w-full max-w-[1500px] pt-7 px-3 justify-start items-start flex-wrap">
                 
