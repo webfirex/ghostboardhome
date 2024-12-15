@@ -62,7 +62,7 @@ export default function Header() {
 
             <div className="w-full max-w-[1500px] flex justify-between items-center h-full mt-3">
                 <div className="flex justify-end h-full items-start sm:items-center max-w-[200px] gap-2">
-                    <Link href={'https://discord.gg/RHSp35qM'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-3 sm:px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
+                    <Link href={'https://discord.gg/ghostboard-stocks-options-futures-crypto-790412544132907019'} className={manrope.className + " flex items-center justify-center gap-2 bg-white/5 scale-[0.98] hover:scale-100 transition-all rounded-full font-light text-white px-3 sm:px-8 py-3 backdrop-blur-lg text-nowrap relative border border-white/10"}>
                         <Image src={'/icons/discord.png'} h={'30px'} w={'30px'} />
                         <span className=" hidden sm:block">Join Discord</span>
                     </Link>

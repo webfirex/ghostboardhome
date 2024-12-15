@@ -102,7 +102,7 @@ export default function WhyUs() {
                     <div className="flex gap-4 w-full xl:justify-start justify-center mt-4 flex-wrap">
                         <Link href={'https://ghostboard.net/auth/sign-up'}><RainbowButton className=" text-white !font-light hover:scale-[1.02] transition-all py-7 text-nowrap">✨ Start your free trial now ✨</RainbowButton></Link>
                         <BoxReveal duration={0.7}>
-                        <Link href={'https://discord.gg/RHSp35qM'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-white py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
+                        <Link href={'https://discord.gg/ghostboard-stocks-options-futures-crypto-790412544132907019'} className={manrope.className + " text-md flex items-center justify-center gap-2 transition-all font-light text-white py-3 text-nowrap underline underline-offset-4 hover:underline-offset-8"}>
                             Join our community
                             <IconArrowNarrowRight className=" origin-bottom" />
                         </Link>
